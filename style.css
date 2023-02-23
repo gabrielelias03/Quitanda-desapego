@@ -1,0 +1,224 @@
+.product-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-preview {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.product-preview img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .product-preview {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-preview {
+    width: 100%;
+  }
+}
+
+
+<style>
+  .product-preview {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .product-preview img {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .product-preview {
+      width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .product-preview {
+      width: 100%;
+    }
+  }
+</style>
+
+/* Estilos gerais */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li {
+	margin-right: 20px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+	color: #ff8c00;
+}
+
+/* Estilos da seção "Sobre Nós" */
+
+section#home {
+	background-color: #f7f7f7;
+	padding: 40px 0;
+}
+
+section#home h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+section#home p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* Estilos da seção "Produtos" */
+
+section#produtos {
+	background-color: #fff;
+	padding: 40px 0;
+}
+
+section#produtos h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.produtos-lista {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.produto-item {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 40px;
+}
+
+.produto-item img {
+	width: 100%;
+	height: auto;
+}
+
+.produto-item h3 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.produto-item p {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-comprar {
+	background-color: #ff8c00;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-comprar:hover {
+	background-color: #fff;
+	color: #ff8c00;
+}
+
+/* Estilos da seção "Contato" */
+
+section#contato {
+	background-color: #f7f7f7;
+	padding: 40px 0;
+}
+
+section#contato h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+form#form-contato {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-grupo {
+	flex-basis: 100%;
+	margin-bottom: 20px;
+}
+
+.form-grupo label {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-grupo textarea {
+	height: 150px;
+}
+
+.btn-enviar {
+	background-color: #ff8c00;
+	color: #fff
